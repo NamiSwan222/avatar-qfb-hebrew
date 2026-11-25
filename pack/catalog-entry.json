@@ -1,0 +1,15 @@
+{
+  "id": "avatar-qfb",
+  "name": "Avatar: The Last Airbender - Quest for Balance",
+  "nameHe": "אווטאר: כשף האוויר האחרון – המסע לאיזון",
+  "engine": "unreal4",
+  "aboutHe": "תרגום מלא לעברית: כל הדיאלוגים, המשימות, התפריטים, ההדרכות, תיאורי הפריטים והכתוביות של הסרטונים, עם גופנים עבריים וכתיבה מימין לשמאל. העברית פעילה רק כשמפעילים את המשחק מהמשגר; הפעלה מ-Steam נשארת באנגלית.",
+  "detect": {
+    "steamAppId": "1620030",
+    "epicAppName": null,
+    "markerFile": "Ala/Binaries/Win64/Ala-Win64-ShippingDRM.exe",
+    "processNames": ["Ala-Win64-ShippingDRM.exe"]
+  },
+  "pack": { "tag": "avatar-qfb-*", "asset": "avatar-qfb-he-*.zip" },
+  "requires": []
+}

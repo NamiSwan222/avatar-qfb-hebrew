@@ -470,3 +470,20 @@ pub unsafe extern "system" fn DllMain(_inst: Handle, reason: u32, _res: *mut c_v
     }
     1
 }
+
+#[cfg(test)]
+mod tests {
+    use super::wild;
+
+    #[test]
+    fn wildcard_patterns_used_by_engine_scans() {
+        assert!(wild("*.*", "zzz_tirgumim_he_p.pak"));
+        assert!(wild("*", "anything"));
+        assert!(wild("*.pak", "zzz_tirgumim_he_p.pak"));
+        assert!(!wild("*.pak", "zzz_tirgumim_he_p.sig"));
+        assert!(wild("zzz*", "zzz_tirgumim_he_p.pak"));
+        assert!(wild("zzz_tirgumim_he_p.pak", "zzz_tirgumim_he_p.pak"));
+        assert!(!wild("other.pak", "zzz_tirgumim_he_p.pak"));
+        assert!(!wild("a*b*c", "abc")); // two stars: not supported, never matches
+    }
+}
