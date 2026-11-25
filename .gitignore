@@ -1,0 +1,4 @@
+work/
+*.pak
+*.dll
+__pycache__/
