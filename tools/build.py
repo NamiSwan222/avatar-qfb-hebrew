@@ -36,10 +36,10 @@ def main():
     os.makedirs(data)
     pak.build(stage, os.path.join(data, PAK_NAME))
     with open(os.path.join(data, 'redirect.cfg'), 'w', newline='\r\n') as f:
-        f.write('root=..\..\..\nadd=Ala\Content\Paks\' + PAK_NAME + '\n')
+        f.write('root=..\\..\\..\nadd=Ala\\Content\\Paks\\' + PAK_NAME + '\n')
     dll = os.path.join(WORK, 'proxy-target', 'release', 'tirgumim_proxy.dll')
     if not os.path.exists(dll):
-        sys.exit('build the proxy first: tools\proxy\build.cmd xinput1_3 work\proxy-target')
+        sys.exit(r'build the proxy first: tools\proxy\build.cmd xinput1_3 work\proxy-target')
     shutil.copy(dll, os.path.join(files, WIN64, 'xinput1_3.dll'))
     print('pack files in', files)
 

@@ -40,6 +40,7 @@ forms when they speak about themselves or are addressed).
 | Hei Bai | היי באי |
 | Guru Pathik | הגורו פאתיק |
 | Xin Fu / Master Yu | שין פו / המאסטר יו |
+| Twinkle Toes (Toph's nickname for Aang) | רגלי נוצה |
 | Cabbage Man | איש הכרובים ("My cabbages!" = "הכרובים שלי!") |
 | Other Chinese/Inuit-style NPC names | transliterate by sound (Chit Sang = צ'יט סאנג, Qing Guo = צ'ינג גואו) |
 

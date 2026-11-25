@@ -24,7 +24,7 @@ def check():
     for table, rows in en.items():
         for key, src in rows:
             total += 1
-            if not src.strip() or src in keep.get('values', []) or key in keep.get('keys', []):
+            if not re.search(r'[A-Za-z]', re.sub(r'\d+x\d+', '', TOKEN.sub('', src))) or src in keep.get('values', []) or key in keep.get('keys', []):
                 done += 1
                 continue
             t = he[table].get(key)
